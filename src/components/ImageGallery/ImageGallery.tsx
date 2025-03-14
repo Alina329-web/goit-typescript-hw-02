@@ -11,7 +11,7 @@ interface ImageGalleryProps {
   }[];
   handleImageClick: (image: {
     id: string;
-    urls: { small: string };
+    urls: { small: string; regular: string };
     alt_description: string;
   }) => void;
 }
