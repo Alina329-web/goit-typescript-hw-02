@@ -4,7 +4,11 @@ import ImageCard from '../ImageCard/ImageCard';
 import styles from './ImageGallery.module.css';
 
 interface ImageGalleryProps {
-  images: { id: string; urls: { small: string }; alt_description: string }[];
+  images: {
+    id: string;
+    urls: { small: string; regular: string };
+    alt_description: string;
+  }[];
   handleImageClick: (image: {
     id: string;
     urls: { small: string };
